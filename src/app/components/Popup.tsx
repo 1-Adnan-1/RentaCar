@@ -28,7 +28,7 @@ const Popup = ({ car, onClose }: Props) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 popup-overlay backdrop-blur-sm bg-black/30">
-      <div className="bg-white rounded-lg p-6 max-w-[600px] w-full transform transition-all duration-300 ease-in-out scale-95 shadow-xl shadow-black/50">
+      <div className="bg-white rounded-lg p-6 max-w-[600px] w-full transform transition-all duration-300 ease-in-out scale-95 shadow-xl shadow-black/50 max-h-[90vh] overflow-auto">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800">
             {car.make} {car.model}
