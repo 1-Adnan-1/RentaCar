@@ -1,7 +1,10 @@
+import { ReactNode } from "react";
+
 type Props = {
-  children: JSX.Element | JSX.Element[];
+  children: ReactNode;
   designs?: string;
 };
+
 const Container = ({ children, designs }: Props) => {
   return (
     <div
